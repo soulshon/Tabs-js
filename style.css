@@ -1,0 +1,29 @@
+.btn-nav.active{
+	background: #ffa500;
+}
+.btn-nav:hover{
+	background-color: #ddd;
+}
+
+.btn-nav{
+		height: 50px;
+	width: 300px;
+	border: 0;
+	border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.item{
+    display: none;
+	border-radius: 50%;
+}
+
+.item.active{
+    display: block;
+	
+}
+.container-item{
+	margin: 0 auto;
+	max-width: 500px;
+	max-height: 800px;
+}
