@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+    }
+
 .btn-nav.active{
 	background: #ffa500;
 }
@@ -6,11 +10,16 @@
 }
 
 .btn-nav{
-		height: 50px;
+	margin-left: 500px;
+	height: 50px;
 	width: 300px;
 	border: 0;
 	border-right: 1px solid #ddd;
     cursor: pointer;
+	position: center;
+	font-size: 30px;
+	border-radius:10px;
+	background-color: lightseagreen; 
 }
 
 .item{
@@ -26,4 +35,85 @@
 	margin: 0 auto;
 	max-width: 500px;
 	max-height: 800px;
+	
 }
+
+.#1{
+	position: reletive; /* Абсолютное позиционирование */
+    left: 160px; /* Положение элемента от левого края */
+    top: 50px; /* Положение от верхнего края */
+    width: 225px; /* Ширина блока */
+    padding: 5px; /* Поля вокруг текста */
+    background: #f0f0f0; /* Цвет фона */ 
+}
+
+@media(max-width: 1260px){
+        .container{
+            max-width: 960px;
+        }
+        .search-form {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .tabs-content{
+            flex-wrap:wrap;
+        }
+        .advantages{
+            flex-wrap:wrap;
+           
+        }
+        .tabs-card{
+            flex:50%;
+            max-width: calc(50%-30px);
+        }
+        .footer-logo{
+            margin-right: 40 px;
+        }
+        
+    }
+
+    @media(max-width: 992px){
+        .container{
+            max-width: 750 px;
+        }
+        .slide {
+            padding: 70px;
+        }
+        .delivery-card{
+            width: calc(50%-30px)
+        }
+        .advantages{
+            flex-wrap:wrap;
+         }
+    }
+
+    @media(max-width: 768px){
+        .container{
+            max-width: 560px;
+        }
+            .header{
+                flex-wrap: wrap;
+            }
+            .search-form  {
+                order: 5;
+                margin-left:0;
+                margin-right:0;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .promo{
+                flex-wrap: wrap; 
+            }
+        }
+    @media(max-width: 576px){
+        .container {
+            max-width: 90%;
+        }
+        .tabs-card{
+            max-width: 100%;
+        }
+        .advantages{
+            flex-wrap:wrap;
+           
+        }
+    }
